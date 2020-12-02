@@ -47,4 +47,13 @@ public class LoginGeneratorTest {
         assertEquals("Pb : les 2 devraient être égaux : ", "PDUR", logGen.generateLoginForNomAndPrenom("Dùrand","Paul"));
         //assertNotEquals("Pb, les 2 devraient être dif : ", true, log.loginExists("log2"));
     }
+
+    @Test
+    public void CT5() {
+        //String[] tabLog = {"LauraDuph", "LauDuf", "log3"};
+        //LoginService log = new LoginService(tabLog);
+
+        assertEquals("Pb : les 2 devraient être égaux : ", "PDU", logGen.generateLoginForNomAndPrenom("Du","Paul"));
+        //assertNotEquals("Pb, les 2 devraient être dif : ", true, log.loginExists("log2"));
+    }
 }
